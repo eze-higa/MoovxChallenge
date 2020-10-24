@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<form method="get" asp-controller="Employee" asp-action="Details">
+    <div class="form-group">
+        <input type="number" class="form-control" id="search-box" aria-describedby="searchHelp" placeholder="Enter the id" name="id" />
+        <small id="searchHelp" class="form-text text-muted">Enter the Id of the employee or leave it blank to get all the employees.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
